@@ -5,6 +5,8 @@ const AddPopularProducts = (props) => {
     { text: "pizza", emoji: "🍕" },
     { text: "salade", emoji: "🥬" },
     { text: "oranges", emoji: "🍊" },
+    { text: "kiwi", emoji: "🥝" },
+    { text: "champagne", emoji: "🍾" }
   ]
   const {shopping, addToShoppingList} = props
   return (
