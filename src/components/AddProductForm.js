@@ -7,23 +7,23 @@ const AddProductForm = (props) => {
     if (!shopping.includes(newProduct)) {
       addToShoppingList(newProduct)
     } else {
-      alert("Produit déja sur la liste")
+      alert(`${newProduct} est déjà sur la liste`)
     }
-
+    event.target.reset()
   }
   return (
-      <form class="mb-5" onSubmit={handleFromSubmit}>
-          <div className="input-group mb-2">
-            <input
-              id="product"
-              class="form-control"
-              aria-label="Ajouter sur la liste"
-              required
-            /><button type="submit" class="btn btn-success btn-lg">
-              J'ajoute !
-            </button>
-          </div>
-        </form>
+  <form class="mb-5" onSubmit={handleFromSubmit}>
+      <div className="input-group mb-2">
+        <input
+          id="product"
+          class="form-control"
+          aria-label="Ajouter sur la liste"
+          required
+        /><button type="submit" class="btn btn-success btn-lg">
+          J'ajoute !
+        </button>
+      </div>
+  </form>
   )
 }
 
