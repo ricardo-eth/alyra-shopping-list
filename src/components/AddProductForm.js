@@ -2,12 +2,12 @@ const AddProductForm = (props) => {
   const { shopping, addToShoppingList} = props
   const handleFromSubmit = (event) => {
     event.preventDefault()
-    console.log(event.target.elements.product.value)
+    // console.log(event.target.elements.product.value)
     const newProduct = event.target.elements.product.value
     if (!shopping.includes(newProduct)) {
       addToShoppingList(newProduct)
     } else {
-      alert("produit déja sur la liste")
+      alert("Produit déja sur la liste")
     }
 
   }
