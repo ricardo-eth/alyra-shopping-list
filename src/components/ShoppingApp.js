@@ -6,9 +6,9 @@ import AddProductForm from "./AddProductForm"
 const ShoppingApp = () => {
     const [shopping, setShopping] = useState(["cumin", "curry"])
 
-      const [filter, setFilter] = useState("")
+    const [filter, setFilter] = useState("")
 
-     const addToShoppingList = (product) => {
+    const addToShoppingList = (product) => {
     setShopping([...shopping, product])
     setFilter("")
   }
@@ -30,7 +30,7 @@ const ShoppingApp = () => {
           addToShoppingList={addToShoppingList}
           />
           <AddPopularProducts 
-            shopping={shopping} 
+          shopping={shopping} 
           addToShoppingList={addToShoppingList}
           />
         </div>
